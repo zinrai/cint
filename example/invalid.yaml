@@ -1,0 +1,17 @@
+# Multiple validation errors for demonstration
+name: MyService      # Error: uppercase letters not allowed
+version: 1.2        # Error: missing patch version
+replicas: 0         # Error: must be >= 1
+environment: dev    # Error: must be one of [development, staging, production]
+
+resources:
+  cpu: 100MB        # Error: invalid CPU format
+  memory: 256mb     # Error: invalid memory format (should be Mi or Gi)
+
+ports:
+  - port: 70000     # Error: port must be <= 65535
+    protocol: HTTP  # Error: must be TCP or UDP
+
+healthCheck:
+  interval: 30      # Error: must include 's' suffix
+  timeout: 5sec     # Error: invalid format (should be '5s')

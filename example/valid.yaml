@@ -1,0 +1,27 @@
+name: my-service
+version: v1.2.3
+replicas: 3
+environment: production
+
+resources:
+  cpu: 100m
+  memory: 256Mi
+
+ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+  - name: metrics
+    port: 9090
+    protocol: TCP
+
+healthCheck:
+  enabled: true
+  path: /health
+  interval: 30s
+  timeout: 5s
+
+labels:
+  team: platform
+  component: api
+  tier: backend

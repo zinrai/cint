@@ -1,0 +1,20 @@
+{
+  "name": "MyService",
+  "version": 1.2,
+  "replicas": 0,
+  "environment": "dev",
+  "resources": {
+    "cpu": "100MB",
+    "memory": "256mb"
+  },
+  "ports": [
+    {
+      "port": 70000,
+      "protocol": "HTTP"
+    }
+  ],
+  "healthCheck": {
+    "interval": 30,
+    "timeout": "5sec"
+  }
+}
