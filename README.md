@@ -76,4 +76,4 @@ See the `example/` directory for sample CUE schemas and configuration files:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) for details.
+This project is licensed under the [MIT License](./LICENSE).
