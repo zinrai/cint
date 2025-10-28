@@ -1,5 +1,14 @@
 # cint
 
+> **This repository has been archived**
+> 
+> `cint` has been rebranded and split into specialized tools:
+> - [ycint](https://github.com/zinrai/ycint) - YAML-focused validator
+> - [integratify](https://github.com/zinrai/integratify) - JSON-focused validator
+> - [cuebridge](https://github.com/zinrai/cuebridge) - Shared core logic library
+> 
+> Please use the appropriate tool above for your use case.
+
 A configuration linter powered by CUE - validate your YAML/JSON configs against CUE schemas.
 
 ## Overview
